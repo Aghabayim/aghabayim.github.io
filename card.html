@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap" rel="stylesheet">
+    
+  
+<title>Digital Business Card</title>
+<style>
+    body {
+    background-color: #23252C;
+    font-family: 'Inter', sans-serif;
+}
+    .container {
+    width: 30%;
+    min-width: 350px;
+    margin: 53px auto;
+    }
+    
+    .card {
+    width: 90%;
+    margin: 35px auto;
+    border: 1px solid #ababab;
+    border-radius: 10px;
+    background-color: #161619;
+    }
+    .top {
+    width: 100%;
+    height: 230px;
+    background-image: url(img3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 0;
+    }
+    main {
+    margin: 0 auto;
+    background-color: #161619;
+}
+.content {
+    width: 99%;
+    margin: 0 auto 10px;
+    background-color: #000000;
+    padding-top: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.bio {
+    text-align: center;
+}
+.bio>h1 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bio>h3 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #F3BF99;
+    line-height: 15.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bio>p {
+    font-weight: 400;
+    font-size: 11px;
+    color: #F5F5F5;
+    line-height: 15px;
+}
+.messenger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.messenger--link:nth-child(1) {
+    background-color: white;
+    border: 1px solid #D1D5DB;
+    color: #374151;
+}
+.messenger--link {
+    width: 115px;
+    height: 35px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 5%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.messenger--link--icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5%;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-envelope:before {
+    content: "\f0e0";
+}
+.messenger--link--text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.messenger--link:nth-child(2) {
+    background-color: #5093E2;
+    border: 1px solid #3787e2;
+    color: #FFFFFF;
+}
+
+
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+
+
+.info {
+    padding: 13px 30px;
+}
+.info--component>h2 {
+    font-weight: 600;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    color: #F5F5F5;
+}
+.info--component>p {
+    font-weight: 400;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 15px;
+    color: #DCDCDC;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.info--component>p {
+    font-weight: 400;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 15px;
+    color: #DCDCDC;
+}
+
+
+footer {
+    margin-bottom: 10px;
+}
+
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+.social-icon {
+    vertical-align: middle;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.social-icon>.fa {
+    width: 25px;
+    height: 25px;
+    background-color: #918E9B;
+    padding-top: 2px;
+    border-radius: 3px;
+}
+
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+
+
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+}
+
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+
+.fa-github:before {
+    content: "\f09b";
+}
+.social-icon .fa{
+    cursor: pointer;
+}
+.social-icon .fa:hover{
+    background-color:white;
+}
+
+.messenger--link{
+    cursor:pointer;
+}
+.messenger--link:hover{
+    background-color:gray;
+}
+
+
+</style>
+</head>
+<body>
+    <div class = "container">
+        <div class ="card">
+            <div class ="top"></div>
+            <main>
+                <div class="content">
+                    <div class = "bio">
+                        <h1>Aghabayim Zeynalzada</h1>
+                        <h3>Student</h3>
+                        <p>azeynalzada7548@ada.edu.az</p>
+                    </div>
+                    <div class ="messenger">
+                        <button class = "messenger--link">
+                            <span class = "messenger--link--icon">
+                                <i class ="fa fa-envelope">
+                                   
+                                </i>
+                            </span>
+                            <span class ="messenger--link--text">Email</span>
+                        </button>
+                        <button class ="messenger--link">
+                            <span class="messenger--link--icon">
+                                <i class="fa fa-linkedin">
+                                    
+                                </i>
+                            </span>
+                            <span class="messenger--link--text">Linkedin</span>
+                        </button>
+
+                    </div>
+                    <div class ="info"> 
+                        <div class ="info--component about">
+                            <h2>About</h2>
+                            <p>
+                                "I am a student at ADA SITE."
+                            </p>
+                        </div>
+                        <div class ="info--component interests">
+                            <h2>Interests</h2>
+                            <p>Swimming.Reading Books.Hiking.Camping.And there are some more...</p>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="social-links">
+                    <span class="social-icon">
+                        <i class="fa fa-twitter">
+                            
+                        </i>
+                    </span>
+                    <span class="social-icon">
+                        <i class="fa fa-facebook">
+                            
+                        </i>
+                    </span>
+                    <span class="social-icon">
+                        <i class="fa fa-instagram">
+                            
+                        </i>
+                    </span>
+                    <span class="social-icon">
+                        <i class="fa fa-github">
+                            
+                        </i>
+                    </span>
+
+
+                </div>
+            </footer>
+        
+    </div>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="weather_style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <section class="main">
+      <h1 style="text-align: center;">Weather App</h1>
+      <br>
+      <section class="inputs">
+        <input type="text" placeholder="Enter city" id="cityinput">
+        <input type="text" placeholder="Enter latitude" id="latinput">
+        <input type="text" placeholder="Enter longitude" id="longinput">
+        <br>
+
+        <button onclick="getLocation()" id="loc"><i class="fa fa-map-marker"></i>Get Location</button>
+
+        <br>
+        <input type="submit" value="Submit" id="add">
+      </section>
+
+      <section class="display">
+        <div class="wrapper">
+          <h2 id="cityoutput"></h2>
+          <p id="country"></p>
+          <p id="description"></p>
+          <p id="temp"></p>
+          <p id="mintemp"></p>
+          <p id="maxtemp"></p>
+          <p id="feelslike"></p>
+          <p id="humaditys"></p>
+          <p id="pressure"></p>
+          <p id="wind"></p>
+          <p id="winddirec"></p>
+          <p id="timeanddate"></p>
+        </div>
+      </section>
+    </section>
+
+  </div>
+</body>
+
+</html>
+<script src="script.js"></script>
